@@ -17,7 +17,7 @@ public class Task01Main {
 
     public static String extractSoundName(File file) throws IOException, InterruptedException {
 
-        String ffprobe = "C:\\Users\\nikit\\Desktop\\ffmpeg-master-latest-win64-gpl\\bin\\ffprobe.exe";
+        String ffprobe = "C:\\Users\\Арсен\\Desktop\\ffmpeg-master-latest-win64-gpl\\bin\\ffprobe.exe";
         ProcessBuilder pb = new ProcessBuilder();
         pb.command(ffprobe, "-v", "error", "-of", "flat", "-show_format", file.getAbsolutePath());
         Process p = pb.start();
